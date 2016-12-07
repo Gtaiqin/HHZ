@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bwie.ynf.QRcodeActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffffff" >
+
+        <TextView
+            android:id="@+id/more_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的二维码"
+            android:textColor="#fc6b87"
+            android:textSize="20dp" >
+        </TextView>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_shape"
+        android:text="开始扫描二维码" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="扫描数据将在此展示" />
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入要编码的内容" />
+
+    <Button
+        android:id="@+id/gen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button_shape"
+        android:text="生成二维码" />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

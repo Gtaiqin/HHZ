@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="264dp"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/more_gv_item_img"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/bottle_no_lottery" />
+
+    <TextView
+        android:id="@+id/more_gv_item_goodname"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:maxLines="2"
+        android:textColor="#231e1e"
+        android:textSize="18dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/more_gv_item_shop_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:textColor="#e84747"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/more_gv_item_market_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:textColor="#a59696"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+</LinearLayout>

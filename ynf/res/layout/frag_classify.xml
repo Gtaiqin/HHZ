@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_top_background"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/textview_shape"
+            android:gravity="center"
+            android:padding="7dp"
+            android:text="@string/sousuo"
+            android:textColor="#ffaec9"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/rlSearchFrameDelete"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/btnSearch"
+            android:gravity="center_vertical" >
+
+            <EditText
+                android:id="@+id/etSearch"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/search_frame"
+                android:hint="请输入商品名称"
+                android:paddingLeft="32dp"
+                android:singleLine="true"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/ivDeleteText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:paddingRight="20dp"
+                android:src="@drawable/delete"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f9f9f9"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:layout_width="13dp"
+                    android:layout_height="23dp"
+                    android:background="#b9d050" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingLeft="4dp"
+                    android:text="商品分类"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/efficacy" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/eshuxing" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/skin" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:layout_width="13dp"
+                    android:layout_height="23dp"
+                    android:background="#ffc300" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingLeft="4dp"
+                    android:text="热门分类"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <com.bwie.ynf.view.MyGridview
+                android:id="@+id/classify_gv_view1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="3" >
+            </com.bwie.ynf.view.MyGridview>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5.0dip"
+                android:paddingTop="5.0dip" >
+
+                <TextView
+                    android:layout_width="13.0dip"
+                    android:layout_height="23.0dip"
+                    android:background="#fff29c9f" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingLeft="4.0dip"
+                    android:text="热销商品"
+                    android:textColor="#ff000000"
+                    android:textSize="15.0dip" />
+            </LinearLayout>
+
+            <com.bwie.ynf.view.MyGridview
+                android:id="@+id/classify_gv_view2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#efefef"
+                android:horizontalSpacing="10dp"
+                android:numColumns="2"
+                android:padding="10dp"
+                android:verticalSpacing="10dp" >
+            </com.bwie.ynf.view.MyGridview>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

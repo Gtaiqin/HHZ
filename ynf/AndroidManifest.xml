@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bwie.ynf"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:name=".app.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/asdf"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="kK8kAOgu5oo3vSN4NBD7vqTRM9jNp9IG" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_second"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name=".SecondActivity"
+            android:label="@string/title_activity_second"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name=".ProductdetailsActivity"
+            android:label="@string/title_activity_productdetails"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.zxing.activity.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!-- 调用新浪原生SDK，需要注册的回调activity -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name=".WebActivity"
+            android:label="@string/title_activity_web" >
+        </activity>
+        <activity
+            android:name=".MoreActivity"
+            android:label="@string/title_activity_more" >
+        </activity>
+        <activity
+            android:name=".MapActivity"
+            android:label="@string/title_activity_map"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".QRcodeActivity"
+            android:label="@string/title_activity_zx" >
+        </activity>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" >
+                </action>
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bwie.ynf.SettingsActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#9c9c9c" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="设置"
+            android:textColor="#e0d7d7"
+            android:textSize="25dp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/setting_lv_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+    <Button
+        android:id="@+id/back_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_shape"
+        android:text="退出登录" />
+
+</LinearLayout>

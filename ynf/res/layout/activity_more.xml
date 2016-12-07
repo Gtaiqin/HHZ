@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bwie.ynf.MoreActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffffff" >
+
+        <TextView
+            android:id="@+id/more_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/more_title"
+            android:textColor="#fc6b87"
+            android:textSize="20dp" >
+        </TextView>
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/more_gv_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:numColumns="2" />
+
+</LinearLayout>
